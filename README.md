@@ -64,7 +64,7 @@ This keeps the `main.dart` file clean and makes the Post feature **plug‑and‑
 2. Clone the repository:
    ```bash
    git clone <repo‑url>
-   cd flutter-clean-architecture-master
+   cd flutter-clean-architecture
    ```
 3. Fetch dependencies:
    ```bash
