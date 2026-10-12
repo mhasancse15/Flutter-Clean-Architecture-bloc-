@@ -6,7 +6,7 @@ import 'package:cleanarch/features/post/domain/usecases/get_post_usecase.dart';
 import 'package:cleanarch/features/post/presentation/bloc/post_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-List initializePostDependencies() {
+List<RepositoryProvider> initializePostDependencies() {
   return [
     // Datasources
     RepositoryProvider(
