@@ -54,23 +54,6 @@ List initializePostDependencies() {
 
 In `main.dart` the **spread operator** (`...`) inserts each provider into the top‑level `MultiRepositoryProvider` list:
 
-```dart
-runApp(
-  MultiRepositoryProvider(
-    providers: [
-      RepositoryProvider(create: (_) => ApiClient()),
-      ...initializePostDependencies(), // <-- spreads the list
-    ],
-    child: MultiBlocProvider(
-      providers: [
-        ...initializePostBlocs(),
-      ],
-      child: const MyApp(),
-    ),
-  ),
-);
-```
-
 This keeps the `main.dart` file clean and makes the Post feature **plug‑and‑play** – you can add or remove it by editing only the `di.dart` file.
 
 ---
